@@ -1,35 +1,27 @@
-.title h1, h3 {
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-margin: 0px;
-padding: 2px;
-width:10% ;
-}
+body { 
+    box-sizing: border-box;
+} 
 
-h1 {
-    font-size: 80px;
-}
-
-.buildimg {
+.wrap {
     display: flex;
-    flex-wrap: wrap;
+    background-image:url(/pics/certBack.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
     justify-content: center;
-    object-fit: cover;
-    width: 20%;
-    height: 500px
-}
-.image {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    
+    height: 800px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-.buildimg > img {
+.title {
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    object-fit: cover;
-    width: 20%;
-    height: 500px
 }
+
+h1, h3 {
+    color: white;
+    display: flex;
+    margin: 0px;
+}
+
