@@ -1,0 +1,35 @@
+.title h1, h3 {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+margin: 0px;
+padding: 2px;
+width:10% ;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.buildimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: cover;
+    width: 20%;
+    height: 500px
+}
+.image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    
+}
+
+.buildimg > img {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    width: 20%;
+    height: 500px
+}
