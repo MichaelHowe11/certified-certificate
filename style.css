@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+
 }
 
 .wrap {
@@ -60,14 +61,15 @@ body {
 .desc {
     display: flex;
     font-family: indie-flower;
-    font-size: 20px;
+    font-size: 19px;
     padding-top: 20px;
     justify-content: center;
     align-items: center;
+    transform: translate(-12px, 18px);
 }
 
 .desc p {
-    max-width: 60%;
+    max-width: 100%;
 }
 
 .signatures {
@@ -77,9 +79,35 @@ body {
 }
 
 .signature {
-    width: 37%;
+    width: 30vw;
 }
 
 .signature p {
     margin: 10px 0;
+}
+
+
+
+
+@media print {
+    .certificate {
+        transform: scale(0.6)
+    }
+
+    .desc p {
+        max-width: 100%;
+    }
+
+    .certificate h3 {
+        padding-top: 120px;
+    }
+
+    .signature {
+        width: 71.5vw;
+
+    }
+
+    #myForm {
+        display: none;
+    }
 }

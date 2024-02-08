@@ -10,6 +10,19 @@
 
 </head>
 <body>
+    <form action="" id="myForm">
+    
+        <input type="text" name="name" id="name" placeholder="Name">
+
+        <select name="type" id="type">
+            <option value="A">Certificate of Awesomeness</option>
+            <option value="B">Certificate of </option>
+            <option value="C">Certificate of </option>
+        </select>
+
+    </form>
+
+
     <div class="wrap">
         <section class="certificate">
             <section class="title">
@@ -17,20 +30,21 @@
                 <h1>Awesomeness</h1>
                 <h3>This certificate is proudly presented to</h3>
             </section>
-            <h4>Person</h4>
+            <h4 id="nameOutput">Person</h4>
             <section class="desc">
-                <p>(name), thank you for being the awesomest person ever and stuff.
+                <p id="certDescText">, thank you for being the awesomest person ever and stuff.
                     Hopefully, this award will motivate you to improve your awesomeness in the future</p>
             </section>
             <section class="signatures">
                 <section class="signature">
-                    <p>Signature 1</p>
+                    <p id="sig1">Signature 1</p>
                 </section>
                 <section class="signature">
-                    <p>Signature 2</p>
+                    <p id="sig2">Signature 2</p>
                 </section>
             </section>
         </section>
     </div>
+
 </body>
 </html>
