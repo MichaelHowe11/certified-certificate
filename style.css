@@ -1,43 +1,85 @@
+@font-face {
+    font-family: indie-flower;
+    src: url(fonts/IndieFlower-Regular.ttf);
+}
 
 
-body { 
-    box-sizing: border-box;
-} 
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
 
 .wrap {
     display: flex;
     flex-direction: row;
-    background-image:url(/pics/certBack.png);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url('/pics/certback2.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position:center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    background-position: center;
+    height: 800px;
+    margin: 20px;
+    -webkit-print-color-adjust: exact;
 }
 
-.title {
+.title h2 {
+    padding-top: 20px;
+}
+
+.certificate {
+    text-align: center;
+    color: white;
+}
+
+.certificate h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.certificate h2 {
+    padding-top: 120px;
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.certificate h3 {
+    font-size: 1.5em;
+    padding-top: 60px;
+}
+
+.certificate h4 {
+    padding-top: 10px;
+    font-size: 35px;
+    margin: 0;
+}
+
+.desc {
     display: flex;
-    flex-direction: row;
+    font-family: indie-flower;
+    font-size: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.title h3 {
+.desc p {
+    max-width: 60%;
+}
+
+.signatures {
     display: flex;
-    flex-direction: row;
-    color: black;
-
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.title h3 {
-    display: flex;
-    flex-direction: row;
-    color: black;
-
+.signature {
+    width: 37%;
 }
 
-p {
-    color
-}
-
-.class h1 {
-    
+.signature p {
+    margin: 10px 0;
 }
