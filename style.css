@@ -1,3 +1,9 @@
+@font-face {
+    font-family: indie-flower;
+    src: url(fonts/IndieFlower-Regular.ttf);
+}
+
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -53,7 +59,9 @@ body {
 
 .desc {
     display: flex;
-    padding-top: 50px;
+    font-family: indie-flower;
+    font-size: 20px;
+    padding-top: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -69,7 +77,7 @@ body {
 }
 
 .signature {
-    width: 45%;
+    width: 37%;
 }
 
 .signature p {
