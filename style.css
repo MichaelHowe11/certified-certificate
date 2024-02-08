@@ -9,15 +9,17 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    height: 80vh;
-    background-image: url('/pics/certBack.png');
-
+    background-image: url('/pics/certback2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 8vh;
-    /* makes it print correctly and stuff */
+    height: 800px;
+    margin: 20px;
     -webkit-print-color-adjust: exact;
+}
+
+.title h2 {
+    padding-top: 20px;
 }
 
 .certificate {
@@ -25,14 +27,51 @@ body {
     color: white;
 }
 
-h1 {
-    font-size: 2em;
+.certificate h1 {
+    font-size: 3em;
     margin-bottom: 10px;
-    margin-top: 100px
+    margin-top: 20px;
 }
 
-h2 {
+.certificate h2 {
+    padding-top: 120px;
     font-size: 3em;
     margin: 0;
     font-weight: bold;
+}
+
+.certificate h3 {
+    font-size: 1.5em;
+    padding-top: 60px;
+}
+
+.certificate h4 {
+    padding-top: 10px;
+    font-size: 35px;
+    margin: 0;
+}
+
+.desc {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc p {
+    max-width: 60%;
+}
+
+.signatures {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.signature {
+    width: 45%;
+}
+
+.signature p {
+    margin: 10px 0;
 }
