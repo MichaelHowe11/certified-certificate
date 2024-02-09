@@ -3,6 +3,11 @@
     src: url(fonts/IndieFlower-Regular.ttf);
 }
 
+@font-face {
+    font-family: ProRev;
+    src: url(fonts/ProtestRevolution.ttf);
+}
+
 
 body {
     margin: 0;
@@ -16,13 +21,15 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    background-image: url('/pics/certback2.png');
+    background-image: url(/pics/certback2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
     margin: 20px;
     -webkit-print-color-adjust: exact;
+    width: 1100px;
+    margin: 20px auto;
 }
 
 .title h2 {
@@ -53,6 +60,7 @@ body {
 }
 
 .certificate h4 {
+    font-family: ProRev;
     padding-top: 10px;
     font-size: 35px;
     margin: 0;
@@ -62,15 +70,19 @@ body {
     display: flex;
     font-family: indie-flower;
     font-size: 19px;
-    padding-top: 20px;
+    padding-top: 25px;
     justify-content: center;
     align-items: center;
-    transform: translate(-12px, 18px);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .desc p {
-    max-width: 100%;
+    width: 81%;
+    padding-right: 3%;
 }
+
+
 
 .signatures {
     display: flex;

@@ -59,14 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let certificate = document.getElementById('type');
 
         let name = document.getElementById('nameOutput').innerText;
-        let desc = `, thank you for being the awesomest person ever and stuff.
-        Hopefully, this award will motivate you to improve your awesomeness in the future`;
+        let desc = `, thank you for being the awesomest person ever and stuff. Hopefully, this award will motivate you to improve your awesomeness in the future`;
 
-        let desc2 = `, your performance was extremely mediocre,I wanted to be nice and give you an award so that you can
-        feel good about yourself and not feel left out compared to the general population of above medicore people.`;
+        let desc2 = `, your performance was extremely mediocre, I wanted to be nice and give you an award so that you can feel good about yourself and not feel left out compared to the general population of above medicore people.`;
 
-        let desc3 = `, Not sure how you got this award, literally nobody reads documentation.
-        Reading documentation is super duper boring. Why read documentation when you could spend hours debugging?`
+        let desc3 = `, Not sure how you got this award, literally nobody reads documentation. Reading documentation is super duper boring. Why read documentation when you could spend hours debugging?`
 
         console.log(certificate.value);
 
