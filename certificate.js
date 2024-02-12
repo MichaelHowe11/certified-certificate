@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         let nameOutput = document.getElementById('nameOutput');
         // console.log(eventData);
         nameOutput.innerText = eventData.target.value;
+        let certificate1 = document.getElementById('type');
+
+        changeCert(certificate1.value);
     });
 
     document.getElementById('type').addEventListener('change', function (eventData) {
@@ -65,6 +68,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let desc3 = `, Not sure how you got this award, literally nobody reads documentation. Reading documentation is super duper boring. Why read documentation when you could spend hours debugging?`
 
+        let title1 = 'Awesomeness'
+        let title2 = 'Mediocrity'
+        let title3 = 'Reading Documentation'
+
+        let signature1 = ["Keanu Reeves", "Corvo Attano"];
+        let signature2 = ["Taylor Swift", "Yeat"];
+        let signature3 = ["Jeff Atwood", "Joel Spolsky"];
+
+
+
         console.log(certificate.value);
 
 
@@ -74,17 +87,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 break;
             case 'B':
                 desc = name + desc2
-
+                title1 = title2;
+                signature1[0] = signature2[0];
+                signature1[1] = signature2[1];
                 break;
             case 'C':
                 desc = name + desc3;
-                break;
-            case 'D':
-
+                title1 = title3
+                signature1[0] = signature3[0];
+                signature1[1] = signature3[1];
                 break;
         }
 
         certDescText.innerText = desc;
+        certtitle.innerText = title1;
+        sig1.innerText = signature1[0];
+        sig2.innerText = signature1[1];
     }
 });
 

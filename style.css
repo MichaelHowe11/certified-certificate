@@ -8,6 +8,11 @@
     src: url(fonts/ProtestRevolution.ttf);
 }
 
+@font-face {
+    font-family: Allura;
+    src: url(fonts/Allura-Regular.ttf);
+}
+
 
 body {
     margin: 0;
@@ -78,20 +83,24 @@ body {
 }
 
 .desc p {
-    width: 81%;
+    width: 80%;
     padding-right: 3%;
+    max-height: 50px;
 }
 
 
 
 .signatures {
     display: flex;
+    font-family: Allura;
+    font-size: 35px;
     justify-content: center;
     margin-top: 20px;
 }
 
 .signature {
-    width: 30vw;
+    width: 43%;
+
 }
 
 .signature p {
@@ -102,24 +111,19 @@ body {
 
 
 @media print {
-    .certificate {
-        transform: scale(0.6)
-    }
 
-    .desc p {
-        max-width: 100%;
-    }
+
+
 
     .certificate h3 {
-        padding-top: 120px;
+        padding-top: 50px;
     }
 
-    .signature {
-        width: 71.5vw;
-
-    }
 
     #myForm {
         display: none;
+    }
+    .signatures {
+        padding-top: 1%;
     }
 }
