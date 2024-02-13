@@ -89,9 +89,12 @@ body {
 }
 
 .logo {
+    display: flex;
     position: absolute;
     right: 27vw;
     margin-top: 5vh;
+    
+    
 }
 
 .signatures {
@@ -116,7 +119,10 @@ body {
 
 @media print {
 
-
+.logo {
+    right: 10vw;
+    margin-top: 3vh;
+}
 
 
     .certificate h3 {

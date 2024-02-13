@@ -66,15 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let certificate = document.getElementById('type');
 
         let name = document.getElementById('nameOutput').innerText;
-        let desc = `, thank you for being the awesomest person ever and stuff. Hopefully, this award will motivate you to improve your awesomeness in the future`;
+        let desc = [`, thank you for being the awesomest person ever and stuff. Hopefully, this award will motivate you to improve your awesomeness in the future`, `, your performance was extremely mediocre, I wanted to be nice and give you an award so that you can feel good about yourself and not feel left out compared to the general population of above medicore people.`, `, Not sure how you got this award, literally nobody reads documentation. Reading documentation is super duper boring. Why read documentation when you could spend hours debugging?`];
 
-        let desc2 = `, your performance was extremely mediocre, I wanted to be nice and give you an award so that you can feel good about yourself and not feel left out compared to the general population of above medicore people.`;
 
-        let desc3 = `, Not sure how you got this award, literally nobody reads documentation. Reading documentation is super duper boring. Why read documentation when you could spend hours debugging?`
-
-        let title1 = 'Awesomeness'
-        let title2 = 'Mediocrity'
-        let title3 = 'Reading Documentation'
+        let title = ['Awesomeness', 'Mediocrity', 'Reading Documentation'];
 
         let signature1 = ["Keanu Reeves", "Corvo Attano"];
         let signature2 = ["Taylor Swift", "Yeat"];
@@ -87,24 +82,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
         switch (value) {
             case 'A':
-                desc = name + desc;
+                desc[0] = name + desc[0];
                 break;
             case 'B':
-                desc = name + desc2
-                title1 = title2;
+                desc[0] = name + desc[1];
+                title[0] = title[1];
                 signature1[0] = signature2[0];
                 signature1[1] = signature2[1];
                 break;
             case 'C':
-                desc = name + desc3;
-                title1 = title3
+                desc[0] = name + desc[2];
+                title[0] = title[2]
                 signature1[0] = signature3[0];
                 signature1[1] = signature3[1];
                 break;
         }
 
-        certDescText.innerText = desc;
-        certtitle.innerText = title1;
+        certDescText.innerText = desc[0];
+        certtitle.innerText = title[0];
         sig1.innerText = signature1[0];
         sig2.innerText = signature1[1];
     }
