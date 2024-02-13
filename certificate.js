@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", function () {
         changeCert(eventData.target.value);
     });
 
+    document.getElementById("print").addEventListener("click", function(eventData) {
+        window.print();
+    });
+
     // process form Data
     document.getElementById("myForm").addEventListener("submit", function (eventData) {
         eventData.preventDefault(); //stop page reload when form is submitted

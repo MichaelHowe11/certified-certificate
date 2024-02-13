@@ -88,7 +88,11 @@ body {
     max-height: 50px;
 }
 
-
+.logo {
+    position: absolute;
+    right: 27vw;
+    margin-top: 5vh;
+}
 
 .signatures {
     display: flex;
